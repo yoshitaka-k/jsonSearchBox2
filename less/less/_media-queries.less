@@ -1,0 +1,186 @@
+/**
+* Media Queries - Retina Display
+*/
+@media (-webkit-min-device-pixel-ratio: 2){
+    .hatena-module-search-box .search-module-button{
+        background: transparent url(http://blog.hatena.ne.jp/images/theme/search@2x.png) no-repeat right center;
+        background-size: 20px 20px;
+    }
+}
+
+/**
+* Media Queries - Tablet
+*/
+@media (min-width: 768px) and (max-width: 1024px){
+    #container{
+        width: 724px;
+    }
+    #wrapper{
+        width: 460px;
+    }
+    #box2{
+        width: 245px;
+    }
+}
+
+/**
+* Media Queries - Small Tablet & Smartphone
+*/
+@media (max-width: 767px){
+    #globalheader-container{
+        position: static;
+    }
+    #container{
+        width: 100%;
+        padding: 0;
+        word-wrap: break-word;
+        overflow: hidden;
+        background-color: transparent;
+        #content{
+            padding: 0 0 20px;
+        }
+    }
+    #blog-title{
+        margin-bottom: 16px;
+        padding: 0!important;
+        #blog-title-content{
+            #title{
+                padding: 20px 8px 0;
+                font-size: 24px;
+            }
+            #blog-description{
+                font-size: 14px;
+            }
+        }
+        #top-box{
+            .box-shadow();
+        }
+    }
+    .breadcrumb{
+        margin-bottom: 0!important;
+        margin: 0 8px;
+        padding: 4px 8px;
+        background-color: @bg-content;
+        .box-shadow();
+    }
+    #wrapper,
+    #main{
+        float: none;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    #box2{
+        float: none;
+        width: 100%;
+    }
+    #box2-inner{
+        width: 100%;
+    }
+    .hatena-module{
+        width: 100%;
+        float: none;
+    }
+    .entry-header-menu{
+        top: -30px;
+        left: 0px;
+    }
+    .archive-heading{
+        margin: 8px 8px 16px;
+        color: @bg-content;
+        .text-shadow();
+    }
+    .archive-entry,
+    .entry{
+        margin: 8px 8px 16px;
+        padding: 8px;
+        background-color: @bg-content;
+        .box-shadow();
+        .entry-header{
+            margin-bottom: 8px;
+            .entry-date{
+                margin-bottom: 8px;
+            }
+            .entry-title{
+                font-size: 1.3em;
+            }
+        }
+        .categories,
+        .entry-categories,
+        .entry-footer{
+            display: none;
+        }
+        .entry-content{
+            padding-bottom: 8px;
+            line-height: 1.4;
+            overflow: hidden;
+            border-bottom-style: none;
+            p{
+                margin: 0 0 .5em 0;
+            }
+            a.entry-see-more{
+                float: right;
+                margin: 8px 8px 0;
+                .clearfix;
+            }
+        }
+    }
+    .archive-entry{
+        margin-bottom: 16px!important;
+    }
+    .archive-entry-body{
+        .entry-description{
+            margin: 0 0 8px!important;
+        }
+    }
+    .pager{
+        margin: 24px 0 16px;
+        .pager-prev,
+        .pager-next{
+            float: none;
+            display: block;
+            width: auto;
+            margin: 0 8px 0;
+            padding: 8px;
+            font-size: 12px;
+            text-align: center;
+            background-color: white;
+            .ellipsis;
+            .box-shadow();
+        }
+        .pager-prev{
+            margin-bottom: 16px;
+        }
+    }
+    .hatena-module{
+        width: auto;
+        margin: 0 8px 16px;
+        background-color: @bg-content;
+        .box-shadow();
+        .hatena-module-title{
+            margin-bottom: 0;
+        }
+        .hatena-module-body{
+            padding: 8px;
+        }
+    }
+    .hatena-module-category{
+        .hatena-module-body{
+            li{
+                display: block;
+                background-color: transparent;
+            }
+        }
+    }
+    .footer{
+        padding: 10px 0 40px;
+        .footer-links{
+            color: white;
+        }
+    }
+}
+
+/**
+* Media Queries - Smartphone
+*/
+@media (max-width: 480px){
+}

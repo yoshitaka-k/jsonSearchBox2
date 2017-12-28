@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import "less/_mixin.less";
+
+div#json_search-div{
+  font-family: 'Noto Sans Japanese', 'Helvetica neue', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  position: absolute;
+  min-width: 240px;
+  max-height: 284px;
+  background-color: white;
+  border: solid 1px #ddd;
+  z-index: 1;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      width: 100%;
+      margin: 2px 0;
+      a{
+        display: block;
+        padding: 4px 16px;
+        font-size: 11px;
+        color: #444;
+        text-decoration: none;
+        &:hover{
+          color: #444;
+          background-color: #e8e8e8;
+        }
+      }
+    }
+  }
+}
