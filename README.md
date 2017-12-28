@@ -1,0 +1,2 @@
+# jsonSearchBox2
+jsonSearchBox の仕組みを大改造したので別リポジトリ
